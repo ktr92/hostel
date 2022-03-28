@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сеть хостелов</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <header id="header" class="header clearfix">
+        <a name="top"></a>
+        <div class="header__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm visible-xs mobile">
+                        <div class="mobile__header">
+                            <div class="mobile-menu" id="mobile-menu"> <img src="/images/burger.png"> <span>Меню</span></div>
+                            <div class="search-btn mobile__search">
+                                <img src="/images/search.png" alt="">
+                            </div>
+                            <div class="mobile__mainmenu">
+                                <div class="mainmenu">
+                                    <div class="mainmenu__block">
+                                        <div class="mainmenu__close"><img src="/images/menu_close.png" alt=""></div>
+                                        <ul class="full-width">
+                                            <li id="mainmenu0">
+                                                <a href="#"><img src="/images/burger.png"></a>
+                                            </li>
+                                            <li id="mainmenu1"><a href="#">О нас</a></li>
+                                            <li id="mainmenu2" class="active"><a href="#">Хостелы</a></li>
+                                            <li id="mainmenu3"><a href="#">Стоимость проживания</a></li>
+                                            <li id="mainmenu4"><a href="#">Сотрудничество</a></li>
+                                            <li id="mainmenu5"><a href="#">Отзывы</a></li>
+                                            <li id="mainmenu6"><a href="#">Контакты</a></li>
+                                            <li id="mainmenu7"><a href="#myModal_subscribe" data-toggle="modal">Подписка</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1 col-sm-5 col-xs-5">
+                        <div class="logo">
+                            <a href="/"><img src="/images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-11 hidden-sm hidden-xs">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-7 col-xs-7">
+                                <div class="phones">
+                                    <div class="phones__number_1">
+                                        <div>Для частных лиц:</div>
+                                        <a href="tel:84957776655">8 (495) 777-66-55</a>
+                                    </div>
+                                    <div class="phones__number_2">
+                                        <div>Организациям:</div>
+                                        <a href="tel:84958884422">8 (495) 888-44-22</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-9 col-xs-9">
+                                <div class="header__modal">
+                                    <a href="#" class="btn-main">Забронировать</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3" id="header-right1">
+                                <div class="socials">
+                                    <a href=""><img src="/images/socials1.png" alt=""></a>
+                                    <a href=""><img src="/images/socials2.png" alt=""></a>
+                                    <a href=""><img src="/images/socials3.png" alt=""></a>
+                                </div>
+                                <div class="search-btn mobile__search"><img src="/images/search.png" alt=""></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mainmenu">
+                                    <div class="row">
+                                        <div class="mainmenu__block">
+                                            <ul class="full-width">
+                                                <li id="mainmenu0">
+                                                    <a href="#"><img src="/images/burger.png"></a>
+                                                </li>
+                                                <li id="mainmenu1"><a href="#">О нас</a></li>
+                                                <li id="mainmenu2" class="active"><a href="#">Хостелы</a></li>
+                                                <li id="mainmenu3"><a href="#">Стоимость проживания</a></li>
+                                                <li id="mainmenu4"><a href="#">Сотрудничество</a></li>
+                                                <li id="mainmenu5"><a href="#">Отзывы</a></li>
+                                                <li id="mainmenu6"><a href="#">Контакты</a></li>
+                                                <li id="mainmenu7"><a href="#myModal_subscribe" data-toggle="modal">Подписка</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-xs-7 hidden-lg hidden-md visible-sm visible-xs">
+                        <div class="phones">
+                            <div class="phones__number_1">
+                                <div>Для частных лиц:</div>
+                                <a href="tel:84957776655">8 (495) 777-66-55</a>
+                            </div>
+                            <div class="phones__number_2">
+                                <div>Организациям:</div>
+                                <a href="tel:84958884422">8 (495) 888-44-22</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm visible-xs">
+                        <div class="header__modal">
+                            <a href="#" class="btn-main">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-search-box">
+                    <div class="search">
+                        <div class="search_background">
+                            <form>
+                                <input type="submit" value="">
+                                <input type="text" placeholder="Поиск по сайту">
+                                <span class="search-close"><img src="/images/close.png"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="page page_full" id="reviews">
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><span>Отзывы</span></li>
+                        </ul>
+                    </div>
+                    <div class="page__content">
+                        <div class="reviews">
+                            <div class="page__top">
+                                <h1>Отзывы</h1>
+                                <div class="clearfix"></div>
+                                <div class="page__buttons">
+                                    <a href="#myModal_review" data-toggle="modal" class="btn-main btn-main_reviews">Оставить отзыв</a>
+                                    <!-- <div class="buttons_bordered">
+											<a href="" class="subsribe-icon_bordered"></a>
+											<a href="" class="share-icon_bordered"></a>
+											<a href="" class="print-icon_bordered"></a>
+										</div> -->
+                                    <div class="product__buttons product__buttons_middle product__buttons_show product__buttons_page">
+                                        <a href="" class="subsribe-icon"></a>
+                                        <a href="" class="share-icon"></a>
+                                        <a href="" class="print-icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="reviews__items reviews__items_page">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="reviews__item">
+                                            <div class="reviews__stars">
+											   <ul class="rating clearfix">
+												<li><p href="#" class="active"></p></li>
+												<li><p href="#" class="active"></p></li>
+												<li><p href="#" class="active"></p></li>
+												<li><p href="#" class="active"></p></li>
+												<li><p  class=""></p></li>
+											  </ul>																		
+                               
+                                            </div>
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item">
+                                            <div class="reviews__stars">
+                                                 <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	
+											</div>
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item ">
+                                            <div class="reviews__stars">
+                                                   <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	
+											</div>
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item">
+                                            <div class="reviews__stars">
+                                                  <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	
+                                            </div>
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item">
+                                            <div class="reviews__stars">
+                                                  <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	
+												  </div>
+
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item ">
+                                            <div class="reviews__stars">
+                                                   <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	 </div>
+
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item">
+                                            <div class="reviews__stars">
+                                                  <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	
+                                            </div>
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item">
+                                            <div class="reviews__stars">
+                                                   <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	 </div>
+
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="reviews__item reviews__item_last">
+                                            <div class="reviews__stars">
+                                                   <ul class="rating clearfix">
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p href="#" class="active"></p></li>
+													<li><p  class=""></p></li>
+													<li><p  class=""></p></li>
+												  </ul>	</div>
+
+                                            <div class="reviews__text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            </div>
+                                            <div class="reviews__info"><span class="reviews__author">Асланбек</span>&nbsp;<span class="reviews__date">18.12.2018</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pagination">
+                                <div class="pagination__numbers">
+                                    <span>Страницы:</span>
+                                    <ul>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href=""><span>2</span></a></li>
+                                        <li><a href=""><span>3</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><img src="/images/logo2.png" alt=""></div>
+                        <div class="footer__logo2"><img src="/images/logo.png" alt=""></div>
+
+                        <div class="footer__phones">
+                            <div class="phones__number">
+                                <div>Для частных лиц:</div>
+                                <a href="tel:84957776655">8 (495) 777-66-55</a>
+                            </div>
+                            <div class="phones__number">
+                                <div>Организациям:</div>
+                                <a href="tel:84958884422">8 (495) 888-44-22</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Хостелы</a></li>
+                                <li><a href="">Стоимость проживания</a></li>
+                                <li><a href="">Сотрудничество</a></li>
+                                <li><a href="">Отзывы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Подписаться на рассылку</a></li>
+                                <li><a href="">Хостелы на карте Москвы</a></li>
+                                <li><a href="">Хостелы на карте метро</a></li>
+                                <li><a href="">Забронировать</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer__socials">
+                            <a href=""><img src="/images/fsocials1.png"></a>
+                            <a href=""><img src="/images/fsocials2.png"></a>
+                            <a href=""><img src="/images/fsocials3.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="footer__info">
+                            <p>Вся информация, размещенная на данном сайте, ни при каких обстоятельствах не может признаваться публичной офертой в соответствии со ст. 437.2 Гражданского кодекса РФ. Копирование и воспроизведение материалов этого сайта возможно только с согласия администрации сайта.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <div class="footer__block"><a href="" class="footer__link">Политика конфиденциальности</a></div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer__block footer__block_empis"><a href="" class="footer__link">Создание сайта - EMPIS</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Модальные окно - Заказать звонок -->
+    <div id="myModal_zakazat_zvonok" class="modal fade">
+        <div class="modal-dialog" id="modal_zvonok_width">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="images/icon-close.png"></button>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body" id="modal_zvonok_container">
+                    <div class="modal_zvonok_content">
+                        <h4 class="modal-title" id="modal_zvonok">ЗАКАЗАТЬ ЗВОНОК</h4>
+                        <div class="modal_zvonok_form_content">
+                            <form id="form_zakazat_zvonok">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Имя">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="phone" placeholder="Телефон">
+                                </div>
+                                <!-- <div class="form-group">
+                                        <span class="captcha">Введите код с картинки: </span><img src="/images/captcha.png" alt="">
+                                        </div> -->
+                                <div class="check-block">
+                                    <label class="myCheckbox">
+                                        <input type="checkbox" checked="checked" name="check"><span></span>
+                                    </label>
+                                    <label for="check">Даю согласие на обработку персональных данных</label>
+                                </div>
+                                <button class="btn-main">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Футер модального окна 
+                        <div class="modal-footer">
+                          <!--<button class="button_calc"><span id="caption_zakazat">Заказать звонок</button>
+                        </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- Модальные окно - Рассылка -->
+    <div id="myModal_subscribe" class="modal fade">
+        <div class="modal-dialog" id="modal_zvonok_width">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close modal__close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png"></button>
+                </div>
+                <div class="modal-body" id="modal_zvonok_container">
+                    <div class="modal__content">
+                        <div class="formmodal">
+                            <form action="">
+                                <div class="formmodal__title">Подписаться на рассылку</div>
+                                <div class="formmodal__fields">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="E-mail">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="captcha"><img src="/images/captcha.png" alt=""></div>
+                                    </div>
+                                    <div class="form-group form-group_last">
+                                        <input type="submit" value="отправить" class="btn-main btn-main_nocheck">
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальные окно - отзыв -->
+    <div id="myModal_review" class="modal fade">
+        <div class="modal-dialog" id="modal_zvonok_width">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close modal__close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png"></button>
+                </div>
+                <div class="modal-body" id="modal_zvonok_container">
+                    <div class="modal__content">
+                        <div class="formmodal">
+                            <form action="">
+                                <div class="formmodal__title">Оставить отзыв</div>
+                                <div class="formmodal__fields">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="" id="" rows="3" placeholder="Текст отзыва"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="rating"><span>Ваша оценка:</span>
+											<ul class="rating clearfix">
+										<li><a href="#" class=""></a></li>
+										<li><a href="#" class=""></a></li>
+										<li><a href="#" class=""></a></li>
+										<li><a href="#" class=""></a></li>
+										<li><a href="#" class=""></a></li>
+									  </ul>		
+										</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="captcha"><img src="/images/captcha.png" alt=""></div>
+                                    </div>
+                                    <div class="form-group form-group_submit2">
+                                        <input type="submit" value="отправить" class="btn-main">
+                                        <div class="check-block">
+                                            <label class="custom-checkbox">Нажимая на кнопку, я принимаю условия <a href="">соглашения</a>
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script src="/js/maskedinput.js"></script>
+    <script src="/libs/lightbox/js/lightbox.min.js"></script>
+
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>
